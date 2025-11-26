@@ -26,6 +26,14 @@
       });
       console.log(JSON.stringify(push));
     }
+
+    navigator.serviceWorker.addEventListener('message', event => {
+      if (event.data.type === 'PUSH_RECEIVED') {
+        // Handle push data when page is active
+        console.log('Push received while page active:', event.data.data);
+        // Show in-page notification, update UI, etc.
+      }
+    });
   </script>
 </body>
 </html>

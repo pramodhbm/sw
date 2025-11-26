@@ -1,6 +1,5 @@
 self.addEventListener('push', event => {
-
-  var options = {
+  const options = {
     body: event.data ? event.data.text() : 'No payload',
     vibrate: [100, 50, 100],
     icon: '/images/checkmark.png',
@@ -14,11 +13,32 @@ self.addEventListener('push', event => {
         icon: '/images/checkmark.png'},
       {action: 'close', title: 'Close',
         icon: '/images/xmark.png'},
-    ],
-    requireInteraction: false
+    ]
   };
+
   event.waitUntil(
-    self.registration.showNotification('Push Notification', options)
+    // Check if any client (tab) is focused
+    self.clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    }).then(clientList => {
+      const isAnyClientFocused = clientList.some(client => client.focused);
+      
+      if (isAnyClientFocused) {
+        // Tab is active - send message to page instead of showing notification
+        return clientList.forEach(client => {
+          if (client.focused) {
+            client.postMessage({
+              type: 'PUSH_RECEIVED',
+              data: event.data ? event.data.text() : 'No payload'
+            });
+          }
+        });
+      } else {
+        // No tab is focused - show notification
+        return self.registration.showNotification('Push Notification', options);
+      }
+    })
   );
 });
 
