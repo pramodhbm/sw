@@ -25,7 +25,7 @@ let sub3 = {"endpoint":"https://wns2-pn1p.notify.windows.com/w/?token=BQYAAADxfF
 
 let sub4 = {"endpoint":"https://fcm.googleapis.com/fcm/send/cE11w2jHI38:APA91bH3PFVT3auKTj5qzLyZz1YPNmouO3rRhvE3I-a-U2VN6P1wNQ2zMFriMVXN_4eHJl_TBeKB6rRyyjztfVDgrmFhZ6c86nNFBF_AKQv2lB4kbGAw2r-qC60-P65eExtiWvnQKK1-","expirationTime":null,"keys":{"p256dh":"BILACqF3aFm_I0cv6lReqvrMEe9brzVy5ZJo7snCfqSqzEE4FVFWH4eU9f9GRWaJRe-doWXJFhXdpsanwdbByC0","auth":"FCnwpyg3D5IcWagFYruxKw"}}
 
-// push.sendNotification(sub, "Your push message here 22");
-push.sendNotification(sub2, "Hey this is working too!");
+push.sendNotification(sub, "Your push message here 22");
+// push.sendNotification(sub2, "Hey this is working too!");
 // push.sendNotification(sub3, "Hello from Windows Push!");
-push.sendNotification(sub4, "Hello from FCM Push!");
+// push.sendNotification(sub4, "mm Hello from FCM Push!");

@@ -36,7 +36,7 @@ self.addEventListener('notificationclick', event => {
   } else {
     // Handle notification body click (no action button)
     event.waitUntil(
-      clients.openWindow('/')
+      clients.openWindow('https://example.com')
     );
   }
 });
