@@ -21,5 +21,5 @@ let sub = {
 
 let sub2 = {"endpoint":"https://web.push.apple.com/QAdY4SSnGoEYhXnrK0dTqUoViJ7dzYeSBQMHu8_jczZKvgVgP67TmTG0_XkFHHimGMGVSUyxJKy4Qu5e98vtGv9HppIE5--JFa7WwDcIPmtjfHVoMDZ8r3-RyFF57rl_1flEaOcUVgFsBjKIPR2JRxCFGzPV0xRrnrKaKJjhfoU","keys":{"p256dh":"BM3JYU0UF198zC0RmCb6JiuhvhePsRrRcYsY794QATFkld2wyOk5PjrjdNokF3ymQK_HbYrQCllj2-Gfi-nNaS8","auth":"PD8Rl2R5wVIYsAtKBpiOAw"}}
 
-push.sendNotification(sub, "Your push message here 2");
+push.sendNotification(sub, "Your push message here 22");
 push.sendNotification(sub2, "Hey this is working too!");

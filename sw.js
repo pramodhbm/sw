@@ -1,7 +1,7 @@
 self.addEventListener('push', event => {
 
   var options = {
-    body: 'This is a push notification.',
+    body: event.data ? event.data.text() : 'No payload',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
