@@ -11,6 +11,6 @@ push.setVapidDetails(
   keys.privateKey
 );
 
-let sub = {}
+let sub = {"endpoint":"https://web.push.apple.com/QAP3PI1AdPXWRAkXgpZ3_62LNDrTBhtRvMQ8aWNEnAZjRGU3Tfewmjix4VS2CzzeX4tMj3-qbZYPVny0gO6QkL8KbTggAISvZkLHZhmJYyo7G9yAscBBGMPkLaW11uk0kcH36mmFrRY6nAeSOg41bIbDRktzoGinJkIRQ6koaeU","keys":{"p256dh":"BGK0EvDiFARx6u86ASXDPgG8WfX29SewopQkcP7UCNOeBcnxn5ds_G-ZX665xA6Zxpkg40wFz7T93mtvwQ2a_bI","auth":"PCUZo2YqRnWw6-6jh5L0vA"}}
 
 push.sendNotification(sub, "Your push message here");
