@@ -19,13 +19,16 @@ let sub = {
   } 
 }
 
-let sub2 = {"endpoint":"https://web.push.apple.com/QPlPsQ2CwtSyIXmmZYzq55WmUEwdKzFnqOQi2OLoKArBB-PlYNRjC86lCs_29zL6UTZFp-6oJTzAMk2eUcR1FUGh4TReVKXO_dtM-hUT_HfwJuXEMux6z-qWnTFbtFtqLPV2QYJ3KGg5CQ5pnX2tdYjzS2rZKSTma6ZiMXxRx6c","keys":{"p256dh":"BJPuSsR4M114ZBMFXxaqUhR_ska7bO16GD9LVeaKpsxNHaVS9A4EdFxsn9M4h6zECJZmilHo_BE-DQ0O99B5uGw","auth":"tVmovJkXO15XMNkjujSoMA"}}
+let sub2 = {"endpoint":"https://web.push.apple.com/QCGbB-K8igy_O8lTgSqabwvNeRXdaxKyx6lZSgPOfcpOtD7vRIKgxBiUtXBfMzDUDfcKwZpA9ffu6XsUrKLd14qZbD0NxtDqU7A9frDhnYOSKSH1TElwJTopGbc-EjKRm4jNsCvr3i0Z34Bm0ckaJ6SVf9VgZKJmoCSxFMSjlho","keys":{"p256dh":"BMzVCu67SV4r3ErlluM2VOhjLlJ2Age4R-ars71BY6ymeCWBFEltFzWtIvfz8V42N1YyLlYgtnLWt4jicxTjfYo","auth":"Y3xcWhmmNZA2xgxwm1p5lQ"}}
 
-let sub3 = {"endpoint":"https://wns2-pn1p.notify.windows.com/w/?token=BQYAAADxfF07CLKrp7APgw9pvvy8ivuPFi5Rzk5ihYn6iFrz8wr7VT0W0gKA5gigXU18Lq6WFqiclVNyWr06oxss35hJvsmUJt9CGEeDyNCwUpsbFUgNC6zSTTl7RythmlyW8CtyE6cjDHbpo5jTo5JrFxCPbufv%2baPO4OjaavODJIg%2fquP89TDa1quHVRLLoBMem4Jw1ptrEynDXYzRzUZFIyg%2bUHuuIKWyAnUaEcEF%2f%2fQ5TvNW00fsDF%2bA3TSvQkrjOcQyDXo09bqvu%2fktLCGABcqDNXKBmvhR8JCtVrOq55Tz5LZfxsbgxPJc9XTRwleZtt%2fNYt%2fr7UqGOkR6UDkhChvtL8kWZ7iiY8kSAiF6dKNIlQ%3d%3d","expirationTime":null,"keys":{"p256dh":"BI1nEEmSRfT-boihTAd411xjeI1g-dw-JQuxj0HXwdKRfzM7DahoBvJtg__UI7EcRGAb_FktS_pAm88l3ShzEj8","auth":"UYVP3CV9X8FtqWbwFVkbxw"}}
+let sub3 = {"endpoint":"https://web.push.apple.com/QIfD0q_RFPfWqksn8jIvjnBfilYAUO6d_EitR2bfh9ar7uXFjNVwCcJRRegZqqCsogYzLZC0M4evus5sxXKfL1paVq_Y5a25DPG6546dKf_EDCVnSXJTubH7BlZ9nftVcOyuZJHE6AD3SWQytklwwbFKMov1C2rYB0OHA_ccooY","keys":{"p256dh":"BGr-4wpcNiTWo5oTDEsutVVpifCIuEnBFqywzMSEN0x87v_jPft7BNznLOjjgbQ_BMO3jYxzWKUllRzixZgUSeI","auth":"d6fVmvx9ymEEuPYJDcmAGQ"}}
 
-let sub4 = {"endpoint":"https://fcm.googleapis.com/fcm/send/cE11w2jHI38:APA91bH3PFVT3auKTj5qzLyZz1YPNmouO3rRhvE3I-a-U2VN6P1wNQ2zMFriMVXN_4eHJl_TBeKB6rRyyjztfVDgrmFhZ6c86nNFBF_AKQv2lB4kbGAw2r-qC60-P65eExtiWvnQKK1-","expirationTime":null,"keys":{"p256dh":"BILACqF3aFm_I0cv6lReqvrMEe9brzVy5ZJo7snCfqSqzEE4FVFWH4eU9f9GRWaJRe-doWXJFhXdpsanwdbByC0","auth":"FCnwpyg3D5IcWagFYruxKw"}}
+let sub4 = {"endpoint":"https://fcm.googleapis.com/fcm/send/evl-YywxYhc:APA91bHA0fBjVsgeUsB4yvf6o3WdGMNYVcuRK_sHDHORRXh2OIrpslqepz3frKmvaHgB88vKaeA3PvqprPTmkU6mX-wxxMYyn0IoBSJybiSBOn3cXvgsY5iL-hMdXzLMqiHd1-EAs1eR","expirationTime":null,"keys":{"p256dh":"BGlUwGbGmJKDIyIediriQYYqnWPBUSzOz8bBI-mZ5txDLE-wqYmDkuBd9HJ93ARiIZJc3VRFTUnJ6Tcr87SnUeE","auth":"xVegiO75l5FfHfpidIPPbQ"}}
+
+let sub5 = {"endpoint":"https://web.push.apple.com/QM4ZGdeDa6a80cgG6g-Dui7hCVLY5xhuLxCZQ9aak3iCGAQDCwQiR3viGAObQkFOVwlDFLSkiUy84RL6NpiHQxG9JqeCvj_bVRca9Qp8RViGQ_gDi2nA2_rIpYSR2VX_2arzNjmHwiN0mJ0RGgYNzeOrTQcWiIhfm4mHnWJ2n-g","keys":{"p256dh":"BIX6FCxEGg5DV0cvC8SDkqea_-mmOV76UWuOLMhTG1wqqA38tMSzm833cOOU9Z7PmyiIq2PFXuxWCo674piUyGs","auth":"CG0PcNl79Oqa5_8-uODxBw"}}
 
 push.sendNotification(sub, "Your push message here 22");
-push.sendNotification(sub2, "Hey this is working too!");
-// push.sendNotification(sub3, "Hello from Windows Push!");
-// push.sendNotification(sub4, "mm Hello from FCM Push!");
+push.sendNotification(sub2, "Hey this is working too!!");
+push.sendNotification(sub3, "9 Hey this is working too!!!");
+push.sendNotification(sub4, "9 mm Hello from FCM Push!");
+push.sendNotification(sub5, "Final push message!");

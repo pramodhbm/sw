@@ -46,9 +46,14 @@ self.addEventListener('push', event => {
 self.addEventListener('notificationclick', event => {
   event.notification.close();
   
+  const message = encodeURIComponent(event.notification.body || '');
+  const url = `https://example.com?message=${message}`;
+  
+  console.log('Notification message:', message);
+
   if (event.action === 'explore') {
     event.waitUntil(
-      clients.openWindow('https://example.com')
+      clients.openWindow(url)
     );
   } else if (event.action === 'close') {
     // Just close the notification
@@ -56,7 +61,7 @@ self.addEventListener('notificationclick', event => {
   } else {
     // Handle notification body click (no action button)
     event.waitUntil(
-      clients.openWindow('https://example.com')
+      clients.openWindow(url)
     );
   }
 });

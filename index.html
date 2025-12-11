@@ -8,6 +8,7 @@
 <body>
 
   <button onclick="subscribe()" >Subscribe</button>
+  <p id="details"></p>
 
   <script>
     addEventListener('load', async () => {
@@ -25,6 +26,7 @@
         applicationServerKey: 'BDJC1medoCtJ_T7gY3Pk78WtEJklpL9zBMjqF2f3m6ijU--oORl22bmwFXQ7HHXUccdrauAz3AEOgpDonATwYcA'
       });
       console.log(JSON.stringify(push));
+      document.getElementById('details').textContent = JSON.stringify(push);
     }
 
     navigator.serviceWorker.addEventListener('message', event => {
