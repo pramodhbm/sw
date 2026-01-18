@@ -35,17 +35,23 @@ let pramodh_chrome_w = {"endpoint":"https://fcm.googleapis.com/fcm/send/dZKlphk8
 
 let pramodh_andrio = {"endpoint":"https://fcm.googleapis.com/fcm/send/cJVMqu3SmBA:APA91bEHIHsUqeF1fUTjOS6Fz0dBMEyuFyldW6G8RnHB7OgtFiYQaTWz3L0V2G0ENPZkCRebG4RMLkTHpqj7YuJ3JM-v3wSZG9Q-R4zGTg4_Wn3Smp--OD3R4PKDqKG8IYvxQlBfGMIL","expirationTime":null,"keys":{"p256dh":"BEKQytHYuhuiP_v8YKMjNZRld8jWJ9XMpcnjeiWINMXkQw9XUysx1csF5EcXRoxSUQSBOdVpmKMwhGdiYTKEqOQ","auth":"m_iehA4OahUiCvsRbS5pqQ"}}
 
+let pramodh_andrio2 = {"endpoint":"https://fcm.googleapis.com/fcm/send/cJVMqu3SmBA:APA91bEHIHsUqeF1fUTjOS6Fz0dBMEyuFyldW6G8RnHB7OgtFiYQaTWz3L0V2G0ENPZkCRebG4RMLkTHpqj7YuJ3JM-v3wSZG9Q-R4zGTg4_Wn3Smp--OD3R4PKDqKG8IYvxQlBfGMIL","expirationTime":null,"keys":{"p256dh":"BEKQytHYuhuiP_v8YKMjNZRld8jWJ9XMpcnjeiWINMXkQw9XUysx1csF5EcXRoxSUQSBOdVpmKMwhGdiYTKEqOQ","auth":"m_iehA4OahUiCvsRbS5pqQ"}}
+
+let pramodh_andrio3 = {"endpoint":"https://fcm.googleapis.com/fcm/send/epqGVLp61xs:APA91bGjxKTF-V7fVWloakFoGl9Mw2ZE1JvvNJXAt5Ps9bh-QIYI6dY4qy4Ss9OukNlQeuq0VpKZZrVjBmjp6ZSftVJFPqhaB1iKVXGXM8b_5KyoH0u0yowX8zQ21w9vh_oG8zMweOeA","expirationTime":null,"keys":{"p256dh":"BJakFxoE0Nklrr3kA6OZdj54ovFlVB0-IzbkKmyAbrdG1YzpGAjkCt-XoFBBahFJ0_hs3W4IFJEbFdjRgj72cxM","auth":"5-j5y01MtrOmanZWDpNR8g"}}
 
 // push.sendNotification(pramodh, "Hello Pramodh! This is your first push notification.");
-// push.sendNotification(pramodh_ios, "Hello Pramodh iOS! This is your first push notification.");
-// push.sendNotification(pramodh_chrome_w, "Hello Pramodh Chrome Windows! This is your first push notification.");
-push.sendNotification(pramodh_andrio, "Hello Pramodh Android! This is your first push notification.")
+push.sendNotification(pramodh_ios, "Hello Pramodh iOS! This is your first push notification.");
+push.sendNotification(pramodh_chrome_w, "Hello Pramodh Chrome Windows! This is your first push notification.");
+push.sendNotification(pramodh_andrio, "Hello Pramodh Android 2! This is your first push notification.")
+push.sendNotification(pramodh_andrio2, "Hello Pramodh Android! This is your first push notification.")
   .then(response => {
     console.log('Push notification sent successfully:', response);
   })
   .catch(error => {
     console.error('Failed to send push notification:', error);
   });
+
+push.sendNotification(pramodh_andrio3, "Hello Pramodh Android 3! This is your first push notification.");
 
 
 // push.sendNotification(sub, "Your push message here 22");
