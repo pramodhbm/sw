@@ -150,3 +150,23 @@ window.addEventListener('appinstalled', () => {
   console.log('PWA was installed');
   deferredPrompt = null;
 });
+
+// Listen for messages from the service worker
+navigator.serviceWorker.addEventListener('message', (event) => {
+  console.log('Message from service worker:', event.data);
+  
+  if (event.data && event.data.type === 'NOTIFICATION_CLICKED') {
+    displayNotificationData(event.data.data);
+  }
+});
+
+function displayNotificationData(data) {
+  const container = document.getElementById('notificationContainer');
+  if (container) {
+    container.style.display = 'block';
+    document.getElementById('notificationId').textContent = data.id || '-';
+    document.getElementById('notificationTitle').textContent = data.title || '-';
+    document.getElementById('notificationBody').textContent = data.body || '-';
+    document.getElementById('notificationTime').textContent = new Date(data.dateOfArrival).toLocaleString();
+  }
+}

@@ -27,6 +27,10 @@ let sub = {
 
 // let sub5 = {"endpoint":"https://web.push.apple.com/QM4ZGdeDa6a80cgG6g-Dui7hCVLY5xhuLxCZQ9aak3iCGAQDCwQiR3viGAObQkFOVwlDFLSkiUy84RL6NpiHQxG9JqeCvj_bVRca9Qp8RViGQ_gDi2nA2_rIpYSR2VX_2arzNjmHwiN0mJ0RGgYNzeOrTQcWiIhfm4mHnWJ2n-g","keys":{"p256dh":"BIX6FCxEGg5DV0cvC8SDkqea_-mmOV76UWuOLMhTG1wqqA38tMSzm833cOOU9Z7PmyiIq2PFXuxWCo674piUyGs","auth":"CG0PcNl79Oqa5_8-uODxBw"}}
 
+let pramodh_local = {"endpoint":"https://web.push.apple.com/QGke5bpZ-PmXBgFvLQrWhiG0wUMkd2eG4yBJC0Y-K7OWjLNdm85AbXkLkMA8jjmugqRy5wsgfL0ZDdf0t3RWfYiWoxw-avAf1jJZOWquxMnI-6wyFUJVl2S1Tq4T6n_r227ItHtmGjtvKIC8xDj6rfVkB03QzPRuH14QpVlwlKw","keys":{"p256dh":"BO2rj3Bghi78Dy2t5uJ0GYTr2WDDOk4Co7OGlHqp6ZmpYvYU9iQmKCc9j90rCqYNcQyzPeoFu6bJXGYfd2iE7N4","auth":"UTtFBQP1_IN3HO3T_e3Dww"}}
+
+pramodh_local_chrome = {"endpoint":"https://fcm.googleapis.com/fcm/send/f3XgdqkUUls:APA91bFomhUuQc0Li2v8N4UvVkEl_09ULWSb0ZfJc8gbwMTKNdyDc7FbxwOkB_lg9lHoQiWcWUjk5Hk9BRCM5tS5Y9EE_Z33qtXQ9ShRZ6xyFzo3f3_baasYYFwiB3QxBgQM1RMcsusS","expirationTime":null,"keys":{"p256dh":"BEM8U24pksEN2jH6E5KBZyNxzK_WLOOr9rQ6mjyoUubG4mCgfciPssGmVe-udu23aLTZD7q1TfzILnvk14munJY","auth":"AyTiXOlqgaZe6oycNQGgFg"}}
+
 let pramodh = {"endpoint":"https://web.push.apple.com/QCR7qfOSSO2mb7FX8nLh4RfCTvFRI2rHRSj8ODGZhydAVn00xw9_ZK5_tWJYGuLe0tY21DAgOo9QhncoZwakpYxsM0-uvAjetSrIsVdpNt-aJPfTvRNtKpbjCmwKWX-jvaOyombJmgaS_v-2mJsYLL6ZjV399jrZEzXKgJwHqaU","keys":{"p256dh":"BN1qjqP-3_QlZx12tZAKaAehTjjfAd5Knd4mJTAiBGGaNofMf_JXWtMZ1AkDZy5nMFD4YIdU2TPVzkCVS3Ha6_g","auth":"Ngk5WodeKwxWJLsVBA22OQ"}}
 
 // let pramodh_ios = {"endpoint":"https://web.push.apple.com/QMazlv4FACtesKbqJbywbdqqPq_vS3g248qQW_YfdKSVzbuJb9rhYqt5csiacb38aSuk4fDKUy1N40Z-NWuom_a79WI9S_lminx0opS4AE5GhKbOYwmAyyxm3X28f9NcLgABzlphr_zFe-1A4HSXSvUY7DZ8mpNa6l8Wh81L9xc","keys":{"p256dh":"BActVi4jSp3SPzYKaNldfvMU_kusfuQI7W2sdYbbt1rkjO6m7Xnl9Lq8A09wM8ZrBBQEc9lsL9g0nwvG-psbGsY","auth":"XBpI7h6RDUmCPDCNWhBhGA"}}
@@ -37,8 +41,11 @@ let pramodh_andriod_r = {"endpoint":"https://fcm.googleapis.com/fcm/send/ci-vWf4
 
 let pramodh_andriod_m = {"endpoint":"https://fcm.googleapis.com/fcm/send/c67xzLoxs8w:APA91bFc1E7s0cscNedQRPQfvcnt0xX2UnentZrlL2qMf-wpaDEq7CkJGmFFcGu3zuMWSGVLZWxcp27GnFYy98sCT30BRkrPsJBvFxggDlqLL0TK6-OBdduJE53Z2GNMOlGW4Ld80tPN","expirationTime":null,"keys":{"p256dh":"BDX28ZnTTkzZk8cC_QFTNlzlRn6eePRobFK8VS983ZJEnkoJ5E_kehJJ06UqOMFJWLqnAEXrj0omKZIqN3BXTSU","auth":"tQe7ZTyHaJvuO6YBfQpCug"}}
 
-push.sendNotification(pramodh, 'Hello Pramodh, from web-push library! - M1')
-push.sendNotification(pramodh_chrome_w, 'Hello Chrome Windows, from web-push library! - M1')
+// push.sendNotification(pramodh, 'Hello Pramodh, from web-push library! - M1')
+// push.sendNotification(pramodh_chrome_w, 'Hello Chrome Windows, from web-push library! - M1')
+
+push.sendNotification(pramodh_local, JSON.stringify({ id: 1, title: 'Local Notification 3', body: 'Hello Localhost, from web-push library! - M8' }))
+push.sendNotification(pramodh_local_chrome, JSON.stringify({ id: 2, title: 'Local Chrome Notification 3', body: 'Hello Local Chrome, from web-push library! - M8' }))
 
 // push.sendNotification(pramodh_andriod_r, 'Hello Android R, from web-push library! - M1')
 //   .catch(function(error) {

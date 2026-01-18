@@ -25,6 +25,23 @@
     <br><br>
     <textarea id="subscriptionOutput" rows="10" cols="50" readonly style="display: none;"></textarea>
     
+    <!-- Notification Display Section -->
+    <div id="notificationContainer" style="display: none; margin-top: 20px; padding: 15px; border: 2px solid #2196F3; border-radius: 8px; background-color: #e3f2fd;">
+        <h2>Last Received Notification</h2>
+        <div style="margin: 10px 0;">
+            <strong>ID:</strong> <span id="notificationId">-</span>
+        </div>
+        <div style="margin: 10px 0;">
+            <strong>Title:</strong> <span id="notificationTitle">-</span>
+        </div>
+        <div style="margin: 10px 0;">
+            <strong>Body:</strong> <span id="notificationBody">-</span>
+        </div>
+        <div style="margin: 10px 0; font-size: 0.8em; color: #666;">
+            <strong>Received at:</strong> <span id="notificationTime">-</span>
+        </div>
+    </div>
+    
     <script src="/app.js"></script>
 </body>
 </html>
