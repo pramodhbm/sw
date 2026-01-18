@@ -1,10 +1,10 @@
-const CACHE_NAME = 'my-pwa-cache-v3';
+const CACHE_NAME = 'my-pwa-cache-v4';
 const urlsToCache = [
   '/',
   '/index.html',
   '/app.js',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/icons/advantest_A_192.png',
+  '/icons/advantest_A_512.png'
 ];
 
 // Install event - cache files
@@ -54,8 +54,8 @@ self.addEventListener('fetch', (event) => {
 self.addEventListener('push', (event) => {
   const options = {
     body: event.data ? event.data.text() : 'New notification',
-    icon: '/icons/icon-192x192.png',
-    badge: '/icons/icon-72x72.png',
+    icon: '/icons/advantest_A_192.png',
+    badge: '/icons/advantest_A_72.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -65,12 +65,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'explore',
         title: 'Open App',
-        icon: '/icons/icon-96x96.png'
+        icon: '/icons/advantest_A_96.png'
       },
       {
         action: 'close',
         title: 'Close',
-        icon: '/icons/icon-96x96.png'
+        icon: '/icons/advantest_A_96.png'
       }
     ]
   };

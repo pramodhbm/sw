@@ -29,33 +29,23 @@ let sub = {
 
 let pramodh = {"endpoint":"https://web.push.apple.com/QCR7qfOSSO2mb7FX8nLh4RfCTvFRI2rHRSj8ODGZhydAVn00xw9_ZK5_tWJYGuLe0tY21DAgOo9QhncoZwakpYxsM0-uvAjetSrIsVdpNt-aJPfTvRNtKpbjCmwKWX-jvaOyombJmgaS_v-2mJsYLL6ZjV399jrZEzXKgJwHqaU","keys":{"p256dh":"BN1qjqP-3_QlZx12tZAKaAehTjjfAd5Knd4mJTAiBGGaNofMf_JXWtMZ1AkDZy5nMFD4YIdU2TPVzkCVS3Ha6_g","auth":"Ngk5WodeKwxWJLsVBA22OQ"}}
 
-let pramodh_ios = {"endpoint":"https://web.push.apple.com/QMazlv4FACtesKbqJbywbdqqPq_vS3g248qQW_YfdKSVzbuJb9rhYqt5csiacb38aSuk4fDKUy1N40Z-NWuom_a79WI9S_lminx0opS4AE5GhKbOYwmAyyxm3X28f9NcLgABzlphr_zFe-1A4HSXSvUY7DZ8mpNa6l8Wh81L9xc","keys":{"p256dh":"BActVi4jSp3SPzYKaNldfvMU_kusfuQI7W2sdYbbt1rkjO6m7Xnl9Lq8A09wM8ZrBBQEc9lsL9g0nwvG-psbGsY","auth":"XBpI7h6RDUmCPDCNWhBhGA"}}
+// let pramodh_ios = {"endpoint":"https://web.push.apple.com/QMazlv4FACtesKbqJbywbdqqPq_vS3g248qQW_YfdKSVzbuJb9rhYqt5csiacb38aSuk4fDKUy1N40Z-NWuom_a79WI9S_lminx0opS4AE5GhKbOYwmAyyxm3X28f9NcLgABzlphr_zFe-1A4HSXSvUY7DZ8mpNa6l8Wh81L9xc","keys":{"p256dh":"BActVi4jSp3SPzYKaNldfvMU_kusfuQI7W2sdYbbt1rkjO6m7Xnl9Lq8A09wM8ZrBBQEc9lsL9g0nwvG-psbGsY","auth":"XBpI7h6RDUmCPDCNWhBhGA"}}
 
 let pramodh_chrome_w = {"endpoint":"https://fcm.googleapis.com/fcm/send/dZKlphk8IhQ:APA91bEP5mjTeYlB1fB4rmXjUJbDHXqwJAJPpCREt3rS2b7lqv4Y1kZicqTwC348VR9Ub88AFxCw_o1YaZTjZCEttuKFiqvLswYzYAEtuc4ARzUnwgGy-m9iPpuH2-jWrkbT8fLhwxCm","expirationTime":null,"keys":{"p256dh":"BGG__UyxqPwH7n1ogRP2Lc2T-RLyrbfXeJVb8fnFpfdcY9hkmpzKuh6iXpODX943zyWTUi7tGopKcAiLgp2KZ7w","auth":"DY0a6SWX_aKcpvLVQckXFA"}}
 
-let pramodh_andrio = {"endpoint":"https://fcm.googleapis.com/fcm/send/cJVMqu3SmBA:APA91bEHIHsUqeF1fUTjOS6Fz0dBMEyuFyldW6G8RnHB7OgtFiYQaTWz3L0V2G0ENPZkCRebG4RMLkTHpqj7YuJ3JM-v3wSZG9Q-R4zGTg4_Wn3Smp--OD3R4PKDqKG8IYvxQlBfGMIL","expirationTime":null,"keys":{"p256dh":"BEKQytHYuhuiP_v8YKMjNZRld8jWJ9XMpcnjeiWINMXkQw9XUysx1csF5EcXRoxSUQSBOdVpmKMwhGdiYTKEqOQ","auth":"m_iehA4OahUiCvsRbS5pqQ"}}
+let pramodh_andriod_r = {"endpoint":"https://fcm.googleapis.com/fcm/send/ci-vWf4uUHk:APA91bGaMKMhi7QDYUTo4rtPhJkfV9B0k8lbexsXASM8IzGmKTOVQk_kLmU6kV3zj0QxpsMwWZldlFuPOzh7U7OskfrldaxQZN173AuWS0mbLX8wRKyhyvMzfRfFAkKgmlbwSAzZSKBT","expirationTime":null,"keys":{"p256dh":"BFyNh4wy6ysO8AOLRx7B6ZKy4Z6BALXEf-LUAh0G7TeZ7jyouiWIaheChIp6fLDqJ8gqZxQ5ys4oqn9s0phi8II","auth":"a6tuKpBPLlgQkWpPwFPHlg"}}
 
-let pramodh_andrio2 = {"endpoint":"https://fcm.googleapis.com/fcm/send/cJVMqu3SmBA:APA91bEHIHsUqeF1fUTjOS6Fz0dBMEyuFyldW6G8RnHB7OgtFiYQaTWz3L0V2G0ENPZkCRebG4RMLkTHpqj7YuJ3JM-v3wSZG9Q-R4zGTg4_Wn3Smp--OD3R4PKDqKG8IYvxQlBfGMIL","expirationTime":null,"keys":{"p256dh":"BEKQytHYuhuiP_v8YKMjNZRld8jWJ9XMpcnjeiWINMXkQw9XUysx1csF5EcXRoxSUQSBOdVpmKMwhGdiYTKEqOQ","auth":"m_iehA4OahUiCvsRbS5pqQ"}}
+let pramodh_andriod_m = {"endpoint":"https://fcm.googleapis.com/fcm/send/c67xzLoxs8w:APA91bFc1E7s0cscNedQRPQfvcnt0xX2UnentZrlL2qMf-wpaDEq7CkJGmFFcGu3zuMWSGVLZWxcp27GnFYy98sCT30BRkrPsJBvFxggDlqLL0TK6-OBdduJE53Z2GNMOlGW4Ld80tPN","expirationTime":null,"keys":{"p256dh":"BDX28ZnTTkzZk8cC_QFTNlzlRn6eePRobFK8VS983ZJEnkoJ5E_kehJJ06UqOMFJWLqnAEXrj0omKZIqN3BXTSU","auth":"tQe7ZTyHaJvuO6YBfQpCug"}}
 
-let pramodh_andrio3 = {"endpoint":"https://fcm.googleapis.com/fcm/send/epqGVLp61xs:APA91bGjxKTF-V7fVWloakFoGl9Mw2ZE1JvvNJXAt5Ps9bh-QIYI6dY4qy4Ss9OukNlQeuq0VpKZZrVjBmjp6ZSftVJFPqhaB1iKVXGXM8b_5KyoH0u0yowX8zQ21w9vh_oG8zMweOeA","expirationTime":null,"keys":{"p256dh":"BJakFxoE0Nklrr3kA6OZdj54ovFlVB0-IzbkKmyAbrdG1YzpGAjkCt-XoFBBahFJ0_hs3W4IFJEbFdjRgj72cxM","auth":"5-j5y01MtrOmanZWDpNR8g"}}
+push.sendNotification(pramodh, 'Hello Pramodh, from web-push library! - M1')
+push.sendNotification(pramodh_chrome_w, 'Hello Chrome Windows, from web-push library! - M1')
 
-// push.sendNotification(pramodh, "Hello Pramodh! This is your first push notification.");
-push.sendNotification(pramodh_ios, "Hello Pramodh iOS! This is your first push notification.");
-push.sendNotification(pramodh_chrome_w, "Hello Pramodh Chrome Windows! This is your first push notification.");
-push.sendNotification(pramodh_andrio, "Hello Pramodh Android 2! This is your first push notification.")
-push.sendNotification(pramodh_andrio2, "Hello Pramodh Android! This is your first push notification.")
-  .then(response => {
-    console.log('Push notification sent successfully:', response);
-  })
-  .catch(error => {
-    console.error('Failed to send push notification:', error);
-  });
+// push.sendNotification(pramodh_andriod_r, 'Hello Android R, from web-push library! - M1')
+//   .catch(function(error) {
+//     console.error('Error sending Push Notification:', error);
+//   });
 
-push.sendNotification(pramodh_andrio3, "Hello Pramodh Android 3! This is your first push notification.");
-
-
-// push.sendNotification(sub, "Your push message here 22");
-// push.sendNotification(sub2, "Hey this is working too!!");
-// push.sendNotification(sub3, "9 Hey this is working too!!!");
-// push.sendNotification(sub4, "9 mm Hello from FCM Push!");
-// push.sendNotification(sub5, "Final push message!");
+// push.sendNotification(pramodh_andriod_m, 'Hello Android M, from web-push library! - M1')
+//   .catch(function(error) {
+//     console.error('Error sending Push Notification:', error);
+//   });
