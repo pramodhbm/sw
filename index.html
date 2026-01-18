@@ -3,39 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>My PWA App</title>
+    
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Theme color for address bar -->
+    <meta name="theme-color" content="#2196F3">
+    
+    <!-- Apple Touch Icon (for iOS) -->
+    <link rel="apple-touch-icon" href="/icons/advantest_A_192.png">
+    
+    <!-- Other meta tags -->
+    <meta name="description" content="My awesome progressive web application">
 </head>
 <body>
-
-  <button onclick="subscribe()" >Subscribe</button>
-  <p id="details"></p>
-
-  <script>
-    addEventListener('load', async () => {
-      console.log("Page has fully loaded");
-      let sw = await navigator.serviceWorker.register('/sw.js');
-      console.log("Service Worker registered:", sw);
-    });
-
-
-    async function subscribe() {
-      alert("Thank you for subscribing!");
-      let sw = await navigator.serviceWorker.ready;
-      let push = await sw.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: 'BDJC1medoCtJ_T7gY3Pk78WtEJklpL9zBMjqF2f3m6ijU--oORl22bmwFXQ7HHXUccdrauAz3AEOgpDonATwYcA'
-      });
-      console.log(JSON.stringify(push));
-      document.getElementById('details').textContent = JSON.stringify(push);
-    }
-
-    navigator.serviceWorker.addEventListener('message', event => {
-      if (event.data.type === 'PUSH_RECEIVED') {
-        // Handle push data when page is active
-        console.log('Push received while page active:', event.data.data);
-        // Show in-page notification, update UI, etc.
-      }
-    });
-  </script>
+    <h1>My PWA Application</h1>
+    <button id="notifyBtn">Send Test Notification</button>
+    <br><br>
+    <textarea id="subscriptionOutput" rows="10" cols="50" readonly style="display: none;"></textarea>
+    
+    <script src="/app.js"></script>
 </body>
 </html>
